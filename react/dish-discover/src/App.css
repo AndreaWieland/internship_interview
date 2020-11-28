@@ -1,0 +1,105 @@
+.App {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: space-between;
+}
+
+.input{
+  width: 50vw;
+  padding: 2em;
+  background-image: url("feast.jpg");
+  background-size: cover;
+}
+.input > h1{
+  font-size: 3em;
+  padding: 5%;
+  color: rgb(112, 107, 107);
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 4px #cccbcb;
+}
+
+.input > h4 {
+  font-size: 1.5em;
+  padding: 3%;
+  color: rgb(112, 107, 107);
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 4px #cccbcb;
+  margin-top: -25px;
+}
+
+.entry{
+  display: flex;
+  flex-direction: row;
+}
+
+.entry_field {
+  height: 2.5em;
+  width: 400px;
+  border-radius: 20px;
+  border: .5px solid gray;
+  padding-left: 1em;
+  padding-right: 50px;
+  outline: none;
+}
+
+.search_button{
+  color: gray;
+  margin-left: -40px;
+  padding: .7em;
+}
+
+.output{
+  width: 50vw;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 5px 0px 7px -2px #D3D3D3
+
+}
+
+.invisible{
+  display: none;
+}
+
+.dishesShown, .dishesNotShown{
+  font-size: 1em;
+  color: white;
+  width: 60%;
+  height: 4em;
+  align-self: center;
+  position: sticky;
+  top: 70px;
+  text-align: center;
+  border-radius: 2px;
+  transition: .3s;
+}
+
+.dishesShown{
+  background-color: rgb(111,146,56)
+}
+
+.dishesNotShown{
+  background-color: rgb(228,82,43);
+}
+
+.visible{
+  margin-top: 90px;
+  margin-left: 10%;
+}
+
+li{
+  list-style-type: none;
+  padding: 2%;
+  background-color: rgb(236, 236, 236);
+  width: 70%;
+  margin: 5px 10px 10px 17px;
+  border-radius: 2px;
+  transition: .3s;
+}
+
